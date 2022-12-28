@@ -1,0 +1,98 @@
+<!-- dftc/templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma CSS Stylesheet -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Who's Up For Re-election?</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+</head>
+<style>
+body  {
+    background-image: url("https://static.politico.com/ef/c9/32d9763148fab49177466cdf9b09/161609-congress-us-capitol-ap-1160.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bebas Neue', serif;
+    font-size: 16px;
+}
+.box1 {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+</style>
+<body>
+    <!-- Body -->
+    <section class="hero is-fullheight">
+		<!-- navbar -->
+		<div class="hero-head">
+      		<header class="navbar is-transparent">
+            		<div class="navbar-brand">
+              			<a class="navbar-item">
+                    		<img src="https://i.imgur.com/uiwnAfQ.png" alt="site logo" style="max-height: 70px">
+                		</a>
+            		</div>
+        			<div class="navbar-menu">
+          				<div class="navbar-start">
+            				<a class="navbar-item has-text-white" style="font-family: 'Gotham Light'; font-style: normal;" href="{% url 'DownForTheCount:dashboard' %}">
+                        		HOME
+                    		</a>
+            				<a class="navbar-item has-text-white" style="font-family: 'Gotham Light'">
+                        		ABOUT
+            				</a>
+          				</div>
+        			</div>
+      		</header>
+		</div>
+		
+		<!-- hero-body -->
+		<div class="hero-body">
+			<!-- Main Text -->
+			<div class="container is-fluid">
+				<p class="title" style="color: #FFFFFF; font-family: Gotham, 'Gotham Black', 'Gotham Light', 'Gotham Thin', 'Gotham XLight';">
+			    &nbsp; <span style="font-family: Arial; font-style: normal; font-size: 7rem;">FIND OUT</span>
+				</p>
+				<p class="subtitle">
+				<span style="color: #A9FF00; font-size: 1.5rem; font-family: 'Gotham Light';"> <span style="color: #FFFFFF; font-size: 2rem;">&nbsp; WHO'S</span></span> <span style="font-family: 'Gotham Light'; font-style: normal; font-weight: normal; font-size: 2rem; color: #B8FF00;">DOWN FOR THE COUNT</span>
+				</p>
+				
+				<nav class"level">
+					<div class="level-left">
+						<div class="level-item">
+							<!-- "state" -->
+							<p class="subtitle">
+						  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-family: Gotham; font-size: 2rem; font-style: normal; font-weight: normal; color: #FFFFFF;"><span style="font-size: 2rem">&nbsp; &nbsp; &nbsp; &nbsp; state:</span></span></p>   
+						</div>
+						<div class="level-item">
+					        <input class="input is-warning is-small"  type="text" placeholder="Enter your state">
+								<button class="button is-warning is-small">
+									<a href="{% url 'DownForTheCount:display' %}">Enter</a>
+								</button>
+				      	</div>
+					</div>
+				</nav>
+				
+		    </div>
+			
+			
+		</div>
+    </section>
+
+    
+
+
+    <!--<div class="container">
+        <div class="columns">
+        {% block content %}
+
+        {% endblock content %}
+    </div>-->
+</body>
+</html>

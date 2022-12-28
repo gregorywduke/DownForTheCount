@@ -1,0 +1,76 @@
+<!-- dftc/templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma CSS Stylesheet -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>DownForTheCount</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+</head>
+<style>
+body  {
+    background-image: url("https://static.politico.com/ef/c9/32d9763148fab49177466cdf9b09/161609-congress-us-capitol-ap-1160.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bebas Neue', serif;
+    font-size: 16px;
+}
+.box1 {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+</style>
+<body>
+    <!-- bckgrnd + navbar -->
+    <section class="hero is-fullheight">
+		<div class="hero-head">
+      		<header class="navbar is-transparent">
+            		<div class="navbar-brand">
+              			<a class="navbar-item">
+                    		<img src="https://i.imgur.com/uiwnAfQ.png" alt="site logo" style="max-height: 70px">
+                		</a>
+            		</div>
+        			<div class="navbar-menu">
+          				<div class="navbar-start">
+            				<a class="navbar-item has-text-white" style="font-family: 'Gotham Light'; font-style: normal;">
+                        		HOME
+                    		</a>
+            				<a class="navbar-item has-text-white" style="font-family: 'Gotham Light'">
+                        		ABOUT
+            				</a>
+          				</div>
+        			</div>
+      		</header>
+		</div>
+		
+		<div class="hero-body">
+			<div class="container">
+				<p class="title" style="color: #FFFFFF; font-family: Gotham, 'Gotham Black', 'Gotham Light', 'Gotham Thin', 'Gotham XLight';"><span class="title" style="color: #FFFFFF; font-family: 'Gotham Light'; font-size: 5rem;">
+				  FIND OUT
+				</span></p>
+				<p class="subtitle">
+				<span style="color: #A9FF00; font-size: 1.5rem; font-family: 'Gotham Light';">WHO'S</span> <span style="color: #FFFFFF; font-size: 1.5rem; font-family: 'Gotham Light'; text-align: justify;">DOWN FOR THE COUNT</span></p>
+		  </div>
+			
+		</div>
+    </section>
+
+    
+
+
+    <!--<div class="container">
+        <div class="columns">
+        {% block content %}
+
+        {% endblock content %}
+    </div>-->
+</body>
+</html>

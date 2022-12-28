@@ -1,0 +1,126 @@
+<!-- dftc/templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma CSS Stylesheet -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Who's Up For Re-election?</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+</head>
+<style>
+body  {
+    background-image: url("https://static.politico.com/ef/c9/32d9763148fab49177466cdf9b09/161609-congress-us-capitol-ap-1160.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bebas Neue', serif;
+    font-size: 16px;
+}
+.box1 {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+</style>
+<body>
+    <!-- Body -->
+    <section class="hero is-fullheight">
+		<!-- navbar -->
+		<div class="hero-head">
+      		<header class="navbar is-transparent">
+            		<div class="navbar-brand">
+              			<a class="navbar-item">
+                    		<img src="https://i.imgur.com/uiwnAfQ.png" alt="site logo" style="max-height: 70px">
+                		</a>
+            		</div>
+        			<div class="navbar-menu">
+          				<div class="navbar-start">
+            				<a class="navbar-item has-text-white" style="font-family: 'Gotham Light'; font-style: normal;" href="{% url 'DownForTheCount:dashboard' %}">
+                        		HOME
+                    		</a>
+            				<a class="navbar-item has-text-white" style="font-family: 'Gotham Light'">
+                        		ABOUT
+            				</a>
+          				</div>
+        			</div>
+      		</header>
+		</div>
+		
+		<!-- hero-body -->
+		<div class="hero-body">
+			<!-- Main Container -->
+			<div class="container">
+				<p class="title" style="color: #FFFFFF; font-family: Gotham, 'Gotham Black', 'Gotham Light', 'Gotham Thin', 'Gotham XLight';">
+			    &nbsp; <span style="font-family: Arial; font-style: normal; font-size: 7rem;">TEXAS</span>
+					<span style="font-family: 'Gotham Light'; font-style: normal; font-weight: normal; font-size: 1.2rem; color: #B8FF00;">NOV 2022 GENERAL</span>
+				</p>
+
+				<!-- Vertical Columns -->
+				<div class="tile is-ancestor">
+					<div class="tile is-vertical">
+						<div class="tile">
+							<div class="tile is-parent">
+								<div class="tile is-child is-1">
+									<figure class="image is-96x96 is-centered">
+										<img src="https://i.imgur.com/KDXcqxq.png" alt="site logo" style="max-height: 90px">
+									</figure>
+								</div>
+								<div class="tile is-child notification is-white is-3">
+									<h1 class="Title" style="font-family: Gotham, 'Gotham Black', 'Gotham Light', 'Gotham Thin', 'Gotham XLight';"<span style="font-family: Gotham Thin; font-style: normal; font-size: 4rem;">BETO O'ROURKE</h1>
+									<h2 class="subtitle">Challenger</h2>
+								</div>
+							</div>
+						</div>
+						<div class="tile">
+							<div class="tile is-parent">
+								<div class="tile is-child is-1">
+									<figure class="image is-96x96 is-centered">
+										<img src="https://i.imgur.com/0pLO4h8.png" alt="site logo" style="max-height: 90px">
+									</figure>
+								</div>
+								<div class="tile is-child notification is-white is-3">
+									<h1 class="Title" style="font-family: Gotham, 'Gotham Black', 'Gotham Light', 'Gotham Thin', 'Gotham XLight';"<span style="font-family: Gotham Thin; font-style: normal; font-size: 4rem;">GREG ABBOTT</h1>
+									<h2 class="subtitle">Incumbent</h2>
+								</div>
+							</div>
+						</div>
+						<div class="tile">
+							<div class="tile is-parent">
+								<div class="tile is-child is-1">
+									<figure class="image is-96x96 is-centered">
+										<img src="https://i.imgur.com/sw3R2uu.png" alt="site logo" style="max-height: 90px">
+									</figure>
+								</div>
+								<div class="tile is-child notification is-white is-4">
+									<h1 class="Title">Donald Trump</h1>
+									<h2 class="subtitle">Challenger</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button class="button is-white is-rounded is-outlined" style="color: #00000; font-family: 'Gotham Light';">INFO
+					<a href="https://ballotpedia.org/Texas_gubernatorial_election,_2022">
+				</button>
+			</div>
+		</div>
+    </section>
+
+    
+
+
+    <!--<div class="container">
+        <div class="columns">
+        {% block content %}
+
+        {% endblock content %}
+    </div>-->
+</body>
+</html>
